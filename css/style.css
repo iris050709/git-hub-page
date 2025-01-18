@@ -147,3 +147,6 @@ section {
 .profile-img img:hover {
     transform: scale(1.1); /* Agranda la imagen de perfil al pasar el cursor */
 }
+html {
+    scroll-behavior: smooth;
+}
