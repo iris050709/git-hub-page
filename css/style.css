@@ -1,36 +1,32 @@
 /* Estilos generales */
 body {
-    background-color: #f5f5f5;
+    background-color: #f8f9fa;
     font-family: 'Arial', sans-serif;
-    color: #333;
-    margin-top: 80px; /* Ajuste para que no se superponga el navbar */
+    margin-top: 80px; /* Ajuste para navbar fijo */
 }
 
-/* Hero Section */
 .hero-section {
-    background: #3498db;
+    background: #2d3436;
     color: white;
-    height: 60vh;
-    background-position: center;
-    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .hero-section .profile-img img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.hero-section .profile-img img:hover {
-    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-section h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3rem;
     margin-top: 20px;
+    font-weight: bold;
 }
 
 .hero-section p {
@@ -38,10 +34,40 @@ body {
     font-weight: 500;
 }
 
-/* Sección de redes sociales */
+/* Sección de proyectos */
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card h5 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.project-card p {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Redes sociales */
 .social-icons a {
     color: #333;
-    margin: 0 15px;
     font-size: 1.8em;
     transition: color 0.3s ease;
 }
@@ -50,35 +76,41 @@ body {
     color: #3498db;
 }
 
-/* Navbar */
-.navbar {
-    margin-bottom: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Títulos de secciones */
-h2 {
-    font-weight: 700;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-section {
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-
 /* Footer */
 footer {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Ajuste de márgenes */
-.mb-3, .mt-3, .mt-4 {
-    margin-bottom: 10px !important;
-    margin-top: 10px !important;
+/* Espaciado entre secciones */
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* Iconos en el apartado de tecnologías */
+.list-unstyled i {
+    margin-right: 8px; /* Espaciado entre el icono y el texto */
+    font-size: 1.2rem;
+}
+.project-card img {
+    width: 270px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Suaviza el efecto */
 }
 
-.mb-4 {
-    margin-bottom: 20px;
+.project-card img:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+}
+
+/* Ajuste para la imagen de perfil */
+.profile-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out; /* Suaviza el efecto */
+}
+
+.profile-img img:hover {
+    transform: scale(1.1); /* Agranda la imagen de perfil al pasar el cursor */
 }
